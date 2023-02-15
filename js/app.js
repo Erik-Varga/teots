@@ -4,7 +4,7 @@
 // let countdownDate = new Date('08 April 2024 13:32')
 let countdownDate = new Date('08 April 2024 13:32:00 CST').toString();
 
-const DateCountdown = document.getElementById('countdown-date');
+// const DateCountdown = document.getElementById('countdown-date');
 // DateCountdown.textContent = countdownDate;
 
 /* Set countdown date by adding hours to current date */
