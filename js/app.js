@@ -1,4 +1,3 @@
-// Based on the code written by Jemima Abu: https://webdesign.tutsplus.com/tutorials/how-to-build-a-javascript-countdown-timer--cms-93144
 
 /* Set countdown date as a future date with a 24 hour format */
 // let countdownDate = new Date('08 April 2024 13:32')
@@ -17,10 +16,10 @@ let countdownDate = new Date('08 April 2024 13:32:00 CST').toString();
 // let countdownDate = new Date().setSeconds(new Date().getSeconds() + 10)
 
 let timerInterval
-const daysElem = document.querySelector("#days"),
-	hoursElem = document.querySelector("#hours"),
-	minutesElem = document.querySelector("#minutes"),
-	secondsElem = document.querySelector("#seconds"),
+const daysElement = document.querySelector("#days"),
+	hoursElement = document.querySelector("#hours"),
+	minutesElement = document.querySelector("#minutes"),
+	secondsElement = document.querySelector("#seconds"),
 	timerRunningContent = document.querySelector("#timer-running"),
 	timerEndContent = document.querySelector("#timer-end")
 
@@ -43,10 +42,10 @@ const startCountdown = () => {
 	let minutes = Math.floor((difference % (60 * 60)) / 60)
 	let seconds = Math.floor(difference % 60)
 
-	daysElem.innerHTML = formatTime(days, "day")
-	hoursElem.innerHTML = formatTime(hours, "hour")
-	minutesElem.innerHTML = formatTime(minutes, "minute")
-	secondsElem.innerHTML = formatTime(seconds, "second")
+	daysElement.innerHTML = formatTime(days, "day")
+	hoursElement.innerHTML = formatTime(hours, "hour")
+	minutesElement.innerHTML = formatTime(minutes, "minute")
+	secondsElement.innerHTML = formatTime(seconds, "second")
 }
 
 const endCountdown = () => {
